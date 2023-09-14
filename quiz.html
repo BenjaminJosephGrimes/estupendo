@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en-gb">
+
+    <head>
+        <title>Estupendo - Quiz</title>
+        <link rel="icon" type="image/png" href="Icon.png">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description" content="home page for a spanish language exchange in Manchester">
+        <meta name="keywords" content="spanish, language, exchange, culture, learn spanish, community, foreign language, learning">
+
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .grid-container {
+                contain: grid;
+                gap: 10px;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        </style>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <img class="icon" src="Icon.png" alt="Speech bubble saying ES for Espanol" width="100px">
+            <h1 id="tagline"><a href=index.html>ESTUPENDO</a></h1>     
+        </header>
+
+
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href=>Members</a></li>
+                <li><a href=>Calendar</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href=>Support Us</a></li>
+                <li><a href=>Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <main class="grid-container">
+            <section id="intro">
+                <h4>Take our personality quiz to see which Spanish-speaking country is the perfect fit for you!</h4>
+            </section>
+
+            <section class="quiz">
+                <form name="quiz">
+                <fieldset class="colourBox">
+                    <legend class="colourLeg">What is your favourite colour?</legend>
+                    <input type="radio" name="colour" id="pink" value="pink">
+                    <label for="pink">Pink/Rosa</label>
+                    <input type="radio" name="colour" id="yellow" value="yellow">
+                    <label for="yellow">Yellow/Amarillo</label>
+                    <input type="radio" name="colour" id="green" value="green">
+                    <label for="green">Green/Verde</label>
+                    <input type="radio" name="colour" id="black" value="black">
+                    <label for="black">Black/Negro</label>
+                </fieldset>
+<br>
+<br>
+                <fieldset class="seasonBox">
+                    <legend class="seasonLeg">Which season do you prefer?</legend>
+                    <input type="radio" name="season" id="spring" value="spring">
+                    <label for="spring">Spring/Primavera</label>
+                    <input type="radio" name="season" id="summer" value="summer">
+                    <label for="summer">Summer/Verano</label>
+                    <input type="radio" name="season" id="autumn" value="autumn">
+                    <label for="autumn">Autumn/Otoño</label>
+                    <input type="radio" name="season" id="winter" value="winter">
+                    <label for="winter">Winter/Invierno</label>  
+                </fieldset>
+<br>
+<br>
+                <fieldset class="animalBox">
+                    <legend class="animalLeg">What is your favourite animal?</legend>
+                    <input type="radio" name="animal" id="cat" value="cat">
+                    <label for="cat">Cat/Gato</label>
+                    <input type="radio" name="animal" id="dog" value="dog">
+                    <label for="dog">Dog/Perro</label>
+                    <input type="radio" name="animal" id="shark" value="shark">
+                    <label for="shark">Shark/Tiburón</label>
+                    <input type="radio" name="animal" id="eagle" value="eagle">
+                    <label for="eagle">Eagle/Águila</label>
+                </fieldset>
+<br>
+<br>
+                <fieldset class="musicBox">
+                    <legend class="musicLeg">What is your favourite music genre?</legend>
+                    <input type="radio" name="music" id="pop" value="pop">
+                    <label for="pop">Pop</label>
+                    <input type="radio" name="music" id="rock" value="rock">
+                    <label for="rock">Rock</label>
+                    <input type="radio" name="music" id="hipHop" value="hipHop">
+                    <label for="hipHop">Hip Hop</label>
+                    <input type="radio" name="music" id="latin" value="latin">
+                    <label for="latin">Latin/Latina</label>   
+                </fieldset>
+<br>
+<br>
+                <fieldset class="dayOffBox">
+                    <legend class="dayOffLeg">Where would you spend a day off?</legend>
+                    <input type="radio" name="dayOff" id="atHome" value="atHome">
+                    <label for="atHome">At home/En casa</label>
+                    <input type="radio" name="dayOff" id="beach" value="beach">
+                    <label for="beach">At the beach/En la playa</label>
+                    <input type="radio" name="dayOff" id="mountains" value="mountains">
+                    <label for="mountains">In the mountains/En las montañas</label>
+                    <input type="radio" name="dayOff" id="city" value="city">
+                    <label for="city">In the city/En la ciudad</label>
+                </fieldset>
+<br>
+<br>
+                <fieldset class="travelBox">
+                    <legend class="travelLeg">How do you prefer to travel?</legend>
+                    <input type="radio" name="travel" id="foot" value="foot">
+                    <label for="foot">On foot/A pie</label>
+                    <input type="radio" name="travel" id="car" value="car">
+                    <label for="car">By car/En coche</label>
+                    <input type="radio" name="travel" id="train" value="train">
+                    <label for="train">By train/En tren</label>
+                    <input type="radio" name="travel" id="plane" value="plane">
+                    <label for="plane">By plane/En avión</label>
+                </fieldset>
+<br>
+<br>
+                <div id="submitButton">
+                    <button type="button" onclick="checkAnswers()">Submit</button>
+                </div>
+                </form>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <p>Copyright ESTUPENDO 2023</p>
+        </footer>
+
+
+    </body>
+</html>
